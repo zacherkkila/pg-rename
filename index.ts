@@ -20,7 +20,7 @@ const client = new Client({
 client.connect();
 
 console.log("\n---- Rename SQL ----\n");
-console.log(`ALTER TABLE ${schema}.${tableName} rename to ${newTableName};`);
+console.log(`ALTER TABLE ${schema}.${tableName} RENAME TO ${newTableName};`);
 
 client.query(
   `SELECT
